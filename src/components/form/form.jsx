@@ -3,26 +3,26 @@ import './form.css'
 
 const form = () => {
   return (     
-    <section class="form-section container">
+    <section className="form-section container">
       <form>
-        <div class="name-form">
-          <div class="name-input">
+        <div className="name-form">
+          <div className="name-input">
             <label>Name</label>
             <input type="text" placeholder="Name" required />
           </div>
 
-          <div class="mail">
+          <div className="mail">
             <label>Email</label>
             <input type="email" placeholder="Enter email address" required />
           </div>
         </div>
 
-        <div class="formname">
+        <div className="formname">
           <label>Subject</label>
           <input type="text" placeholder="Write a subject" required />
         </div>
 
-        <div class="formname message">
+        <div className="formname message">
           <label>Message</label>
           <textarea
             type="text"
@@ -31,7 +31,7 @@ const form = () => {
           ></textarea>
         </div>
 
-        <button class="send-btn">Send</button>
+        <button className="send-btn">Send</button>
       </form>
     </section>
   )

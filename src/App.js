@@ -1,18 +1,18 @@
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Fixedheader from './components/Fixedheader/Fixedheader';
-import form from'./components/form/form';
-import footer from './components/footer/footer'; 
+import Homepage from './Pages/Homepage/Homepage';
+
 
 function App() {
   return (
-    <div>
-    <Fixedheader />
-    <Navbar/>
-    <form/>
-    <footer/>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route index element={<Homepage />}/>
+      <Route path='about' element={<About/>}/>
+    </Routes>
+    
+    </BrowserRouter>
   );
 }
 
