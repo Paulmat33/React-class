@@ -1,15 +1,18 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import logo from './logo.svg';
-import './App.css';
-import Homepage from './Pages/Homepage/Homepage';
+import Wale from './Pages/Wale/Wale';
+
 
 
 function App() {
   return (
     <BrowserRouter>
+    <div>
+      <Wale/>
+    </div>
     <Routes>
-      <Route index element={<Homepage />}/>
-      <Route path='about' element={<About/>}/>
+      {/* <Route path='/' element={<Layout/>}/> for Navbar and footer */}
+      {/* <Route index element  ={<Homepage />}/> */}
+      <Route path='wale' element={<Wale/>}/>
     </Routes>
     
     </BrowserRouter>
