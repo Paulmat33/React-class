@@ -1,0 +1,44 @@
+.header-mail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-light-black);
+    height: 45px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+  }
+  
+  .left-icon {
+    color: var(--bg-off-white);
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    align-items: center;
+  }
+  .left-icon p {
+    font-family: var(--text-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .fa-regular {
+    padding-left: 25px;
+  }
+  .right-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    color: var(--bg-white);
+    cursor: pointer;
+  }
+  .fa-brands {
+    width: 30.17px;
+    height: 30.17px;
+    background: #f9f9f71f;
+    padding: 8px;
+    border-radius: 50px;
+  }
